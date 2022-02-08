@@ -87,8 +87,8 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age*7
 }
 
 
@@ -120,8 +120,38 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight,age){
+  if (age>=1){
+
+    if (weight<=5){
+      return weight*0.05
+    }
+
+    if (5<weight<=10){
+      return weight*0.04
+    }
+
+    if (10<weight<=15){
+      return weight*0.03
+    }
+
+    if (weight>15){
+      return weight*0.02
+    }
+
+  }
+
+  if (0.16<age<0.32){
+return weight*0.1
+  }
+
+if (0.32<=age<0.58){
+   return weight*0.05
+      }
+
+if (0.58<age<1){
+ return weight*0.04
+          }
 }
 
 
@@ -149,8 +179,40 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+//const compChoice = Math.random()*3
+
 function game(user, computer){
-  /*add your code here*/
+  if (user === computer){
+    return "it's a tie"
+  }
+
+  if (user === 'paper'){
+    if (computer ==='rock'){
+      return 'you win!'
+    }
+    if (computer==='scissors'){
+      return 'you lose!'
+    }
+  }
+
+  if (user === 'scissors'){
+    if (computer ==='rock'){
+      return 'you lose!'
+    }
+    if (computer==='paper'){
+      return 'you win!'
+    }
+  }
+
+  if (user === 'rock'){
+    if (computer ==='scissors'){
+      return 'you win!'
+    }
+    if (computer==='paper'){
+      return 'you lose!'
+    }
+  }
+
 }
 
 
@@ -166,8 +228,8 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(KM){
+ return KM*0.62
 }
 
 
@@ -180,8 +242,8 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(CM){
+  return CM*0.0328
 }
 
 
