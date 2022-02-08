@@ -58,7 +58,6 @@ Do the following:
 */
 
 let year = "1999"
-
 console.log(Number(year))
 
 
@@ -318,12 +317,24 @@ HINT - you may need to study tomorrow's content on arrays
 HINT - try looking up the .includes() method
 */
 
+const vowels = ['a','e','i','o','u']
+let total = 0
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(str) {
+  const arr = str.split('')
+  
+for (let i = 0 ; i<arr.length ; i++){
+  let count = 0
+if (vowels.indexOf(arr[i]) >0){
+  count++
+  total+=count
 }
 
+}
+return total
+}
 
+console.log(vowelCounter('hello'))
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
