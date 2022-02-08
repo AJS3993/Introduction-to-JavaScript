@@ -37,8 +37,13 @@ Do the following:
    HINT: no function required
 */
 
+let apple = 5
+let banana = 3
 
-
+if (apple>banana){
+  apple = 10
+}
+console.log(apple)
 
 
 /*
